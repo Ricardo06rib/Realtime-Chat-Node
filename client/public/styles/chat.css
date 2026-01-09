@@ -1,0 +1,114 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/c0/09/fa/c009fab01a5b4909259725d3523f285d.jpg);
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+#nameBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7%;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px;
+    background-color: #212121;
+    color: #fff;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+  height: 80%;
+}
+
+input[type="text"]:focus {
+  border-color: black;
+}
+
+#imgInput{
+    background-color: #212121;
+}
+
+#messageBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px;
+    background-color: #212121;
+    box-sizing: border-box;
+
+}
+
+#chatInput, #imgInput{
+    flex: 1;
+    height: 42px;
+
+    border: none;
+    outline: none;
+    border-radius: 20px;
+
+    padding: 0 14px;
+
+    background: #212121;
+    color: #fff;
+    font-size: 18px;
+}
+
+#messageBar input[type="button"]{
+    font-size: 220%;
+
+    border: none;
+    outline: none;
+    border-radius: 20px;
+
+    background-color: #212121;
+    color: #F1F1F1;
+}
+
+@media (min-width: 1024px){
+    #messageBar {
+        margin: 10px;
+        width: 98%;
+        border-radius: 36px 36px 36px 36px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #nameBar{
+        padding-left: 70px;
+    }
+}
+
+#messages {
+    font-size: larger;
+    margin: 10px;
+    margin-top: 8vh;
+}
+
+#imgInput {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+

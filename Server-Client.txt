@@ -1,0 +1,7 @@
+Client to Server{
+    chatMessage (username, message, roomName)
+}
+
+Server to Client{
+    chatMessage (username, message, roomName)
+}

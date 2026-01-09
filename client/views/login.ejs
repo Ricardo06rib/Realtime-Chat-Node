@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/styles/login.css">
+<body>
+    <H1>Zap Zap</H1>
+    <div class="box">
+        <input type="text" name="Nome" id="username" placeholder="Digite seu nome">
+        <input type="button" value="Entrar chat global" onclick="entrarChatGlobal()">
+        <input type="button" value="Entrar chat específico" onclick="chatEspecifico()">
+    </div>
+
+    <div class="box" id="inputRoomBox">
+        <input type="text" id="room" placeholder="Digite o nome da sala">
+        <input type="button" value="Entrar" onclick="entrarChatEspecifico()">
+    </div>
+
+    <script src="/scripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #212121;
+}
+
+h1{
+    color: #F1F1F1;
+    font-size: 30px;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+#inputRoomBox{
+    display: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 30vh;
+}
+
+.box input[type="text"] {
+    height: 46px;
+    padding: 0 14px;
+
+    border-radius: 12px;
+    border: none;
+    outline: none;
+
+    background-color: #3a3a3a;
+    color: #fff;
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.box input[type="text"]::placeholder {
+    color: #bdbdbd;
+}
+
+.box input[type="text"]:focus {
+    background-color: #444;
+    box-shadow: 0 0 0 2px #25d366;
+}
+
+.box input[type="button"] {
+    height: 46px;
+
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    background-color: #25d366;
+    color: #111;
+
+    transition: 0.2s;
+}
+
+.box input[type="button"]:hover {
+    background-color: #1ebe5d;
+}
+
+.box input[type="button"]:active {
+    transform: scale(0.97);
+}
+
+#inputRoomBox {
+    display: none;
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+    .box {
+        max-width: 420px;
+        padding: 28px 26px;
+    }
+
+    .box input[type="text"],
+    .box input[type="button"] {
+        height: 48px;
+        font-size: 16px;
+    }
+}

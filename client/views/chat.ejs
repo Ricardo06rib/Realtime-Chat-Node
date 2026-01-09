@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/styles/chat.css">
+    <body>
+        <div id="nameBar"><%= roomId %></div>
+        <div id="messages"></div>
+        <div id="messageBar">
+            <input type="button" value="+" id="imgButton" onclick="sendImage()">
+            <input type="text" name="" id="chatInput" placeholder="Digite uma mensagem ...">
+            <input type="text" placeholder="Cole o link da imagem aqui" id="imgInput">
+            <input type="button" value="➤" id="chatButton" onclick="sendMessage()">
+        </div>
+
+        <script>
+            const roomId = "<%= roomId %>";
+        </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/scripts/chat.js"></script>
+
+</html>
+</body>
